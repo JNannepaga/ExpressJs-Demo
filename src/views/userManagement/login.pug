@@ -1,0 +1,14 @@
+extends _layout.pug
+block content
+    div 
+    form(action="/Login", method="post")
+        label UserName
+        br 
+        input(type='email', name = 'userName' required autofocus)
+        br
+        label Password
+        br
+        input(type='text' name = 'password' required autofocus)
+        br
+        input(type="submit")
+        h3 #{errorMessage}
